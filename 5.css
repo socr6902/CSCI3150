@@ -1,0 +1,41 @@
+h1, h2 {
+    color: green;
+    font-family: Arial, sans-serif;
+  }
+  
+  p {
+    color: black;
+    line-height: 1.5;
+  }
+  
+  ul {
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  ol {
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  ol, ul {
+    margin-bottom: 20px;
+  }
+  
+  strong {
+    color: green;
+  }
+  
+  em {
+    color: blue;
+    font-style: italic;
+  }
+  
+  dt {
+    color: green;
+    font-weight: bold;
+  }
+  
+  
