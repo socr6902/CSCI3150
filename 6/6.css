@@ -34,7 +34,7 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 10px black;
   text-transform: uppercase;
-  flex: 5;
+  margin: 0;
 }
 
 h2 {
@@ -53,11 +53,24 @@ p, li {
 
 /* || header layout */
 header {
-  margin-bottom: 10px;
-  display: flex;
-  flex-flow: row wrap;
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    text-align: center;
 }
 
+header img {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    height: 60px;
+    width: auto;
+}
+
+/* || background for regions */
 body > * {
   background-color: red;
   padding: 1%;
@@ -66,12 +79,6 @@ body > * {
 main, header, nav, article, aside, footer, section {
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
-}
-
-header img {
-  display: block;
-  height: 60px;
-  padding-top: 20.15px;
 }
 
 /* || nav layout */
@@ -137,7 +144,8 @@ footer {
 
 /* || container */
 .flex-container {
-  background-color: rgba(0, 255, 0, 0.5); padding: 1%;
+  background-color: rgba(0, 255, 0, 0.5);
+  padding: 1%;
   display: flex;
   flex-wrap: wrap;
 }
